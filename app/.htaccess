@@ -1,0 +1,7 @@
+# Comments used with pound sign
+# Options will prevent access to directories ie http://localhost/repo/mvc/app/
+
+# Options +Indexes (will allow)
+# Options -Indexes (won't allow)
+
+Options -Indexes
