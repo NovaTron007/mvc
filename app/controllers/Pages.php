@@ -1,14 +1,15 @@
 <?php 
 
-class Pages{
+class Pages extends Controller{
 
   public function __construct(){
-    echo 'Pages: contructor loaded<br/>';
+    echo 'Pages: Contructor loaded<br/>';
   } 
 
   // default method
   public function index(){
-    echo 'Pages: index function loaded';
+    echo 'Index function loaded<br/>';
+    $this->view('hello');
   }
 
   public function about($id){
