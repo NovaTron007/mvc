@@ -7,12 +7,14 @@ class Pages extends Controller{
   } 
 
   // default method
+  // get views and pass data to them
   public function index(){
-    echo 'Index function loaded<br/>';
-    $this->view('hello');
+    $data = ["title" => "Welcome"];
+    $this->view('pages/index', $data); // get index.php view (extension added in controller.php )
   }
 
-  public function about($id){
-    echo "Pages: about function loaded: ${id} ";
+  public function about(){
+    $data = ["title" => "About"];
+    $this->view('pages/about', $data); // gets about.php view
   }
 }

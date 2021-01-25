@@ -12,12 +12,12 @@ class Controller{
     return new $model();
   }
 
-  // load view, and pass data in
+  // load view, and pass data to view
   public function view($view, $data=[]){
 
     // check for view file
     if(file_exists('../app/views/'. $view . '.php')){
-      require_once( '../app/views/'. $view . '.php');
+      require_once( '../app/views/'. $view . '.php'); // gets the view ie index.php
     } else{
       // view does not exist
       die('View does not exist');
